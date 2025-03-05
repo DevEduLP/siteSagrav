@@ -1,0 +1,111 @@
+/* Resetando alguns estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    background-image: url('images/InShot_20250305_101445569.jpg');
+    background-size: cover; /* A imagem cobrirá toda a tela */
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Espaça a logo e o menu */
+    align-items: center;
+    padding: 20px;
+    height: 130px;
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Logo */
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    width: 150px;
+}
+
+/* Centraliza o título Discografia no header */
+header h1 {
+    flex: 29; /* Ajusta para que ocupe o espaço central */
+    text-align:center;
+    font-size: 28px;
+    margin: 0px; /* Remove margens extras */
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 5px;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/* Seção Discografia */
+#discografia {
+    width: 80%; /* Limita a largura */
+    max-width: 900px; /* Largura máxima */
+    margin: 20px auto; /* Centraliza a seção */
+    line-height: 1.6;
+    text-align: center;
+}
+
+#discografia h2 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#discografia ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espaçamento entre as capas */
+}
+
+#discografia ul li {
+    margin: 20px;
+    text-align: center;
+    width: 45%; /* Ajustado para 2 por linha */
+    box-sizing: border-box;
+}
+
+#discografia ul li img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#discografia ul li img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255);
+}
+
+#discografia p {
+    color: #f4f4f4;
+    font-size: 18px;
+    margin-top: 10px;
+}

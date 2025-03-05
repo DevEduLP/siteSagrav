@@ -1,0 +1,242 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('images/InShot_20250305_101445569.jpg');
+    background-size: cover; /* A imagem cobrirá toda a tela */
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed; /* A imagem ficará fixa ao rolar a página */
+    color: white; /* Garante que o texto seja legível */
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#header {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+header .logo img {
+    width: 150px; /* Ajuste o tamanho da logo */
+}
+
+nav {
+    flex-grow: -1;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 50px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #f12400; /* Cor ao passar o mouse */
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
+h1 {
+    color: #FF6347;
+}
+.biografia-title {
+    font-size: 85px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombra preta */
+}
+
+#biografia {
+    width: 80%; /* Limita a largura */
+    max-width: 900px; /* Largura máxima */
+    margin: 20px auto; /* Centraliza a seção */
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+    text-align: justify; /* Justifica o texto */
+}
+
+#biografia p {
+    font-size: px; /* Ajuste o tamanho da fonte conforme necessário */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /*sombra preta*/
+}
+
+
+
+
+.fotos img {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+}
+
+
+#discografia {
+    width: 80%; /* Limita a largura */
+    max-width: 900px; /* Largura máxima */
+    margin: 20px auto; /* Centraliza a seção */
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+    text-align: justify; /* Justifica o texto */
+}
+
+#discografia p {
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+#discografia ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espaçamento entre as capas */
+}
+
+#discografia ul li {
+    margin: 20px;
+    text-align: center;
+    width: 45%; /* Ajustado para 2 por linha */
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
+
+#discografia ul li img {
+    width: 100%;
+    max-width: 300px; /* Aumenta o tamanho das imagens */
+    height: auto;
+    border-radius: 10px;
+}
+
+.discografia img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discografia img:hover {
+    transform: scale(1.05); /* Aumenta um pouco ao passar o mouse */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5); /* Adiciona um brilho leve */
+}
+
+
+
+#redes-sociais {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os ícones */
+}
+
+.social-icons a img {
+    width: 40px; /* Tamanho dos ícones */
+    height: auto;
+}
+
+.social-icons a:hover img {
+    filter: brightness(0.8); /* Efeito de escurecimento ao passar o mouse */
+}
+
+#galeria {
+    width: 80%; /* Limita a largura */
+    max-width: 900px; /* Largura máxima */
+    margin: 20px auto; /* Centraliza a seção */
+}
+
+#galeria img {
+    width: 100%; /* Ajusta o tamanho das imagens para ocupar toda a largura disponível */
+    margin-bottom: 20px; /* Espaço entre as imagens */
+    border-radius: 10px; /* Adiciona bordas arredondadas às imagens */
+}
+
+#galeria .galeria-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Cria uma grade responsiva */
+    gap: 20px; /* Espaçamento entre as imagens */
+}
+
+
+/* Estilos para a seção de Notícias */
+#noticias {
+    background-color: #000000; /* Fundo mais claro para as notícias */
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+.noticias-header h2 {
+    text-align: center;
+    font-size: 35px;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.noticias-container {
+    display: flex; /* Usamos flexbox para alinhar as notícias em linha */
+    flex-wrap: wrap; /* Permite que as notícias se quebrem para a linha seguinte se não caberem */
+    gap: 20px; /* Espaço entre as notícias */
+    justify-content: space-between; /* Espaçamento uniforme entre as notícias */
+}
+
+.noticia {
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(110, 108, 108, 0.1); /* Sombra suave */
+    width: 45%; /* Define a largura de cada notícia para duas por linha */
+    min-width: 250px; /* Garante que a largura mínima das notícias não seja muito pequena */
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
+
+.noticia img {
+    width: 100%; /* A imagem ocupa toda a largura do bloco */
+    height: 250px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* A imagem irá cobrir o espaço sem distorcer */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.noticia h3 {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.noticia p {
+    font-size: 16px;
+    color: #7c7979;
+}
+
+.noticia a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.noticia a:hover {
+    text-decoration: underline;
+}

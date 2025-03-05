@@ -1,0 +1,96 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/InShot_20250305_101445569.jpg');
+    background-size: cover; /* A imagem cobrirá toda a tela */
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed; /* A imagem ficará fixa ao rolar a página */
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+/* Header da Loja */
+.loja-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000; /* Fundo escuro */
+    color: white;
+    padding: -10px;
+    border-radius: 8px 8px 0 0; /* Cantos arredondados no topo */
+    margin-bottom: 20px;
+}
+
+.loja-header h2 {
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
+    flex-grow: 1; /* O título ocupa o espaço restante */
+}
+
+.logo-container {
+    flex-shrink: 0; /* Impede que a logo encolha */
+}
+
+.logo-banda {
+    width: 150px; /* Tamanho da logo */
+    height: auto;
+}
+
+/* Container de Produtos */
+.loja-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilo dos Produtos */
+.produto {
+    background: rgba(0, 0, 0, 0.8); /* Fundo transparente com sombra */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.produto h3 {
+    color: #ff0000; /* Cor para o nome do produto */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button:hover {
+    background: #cc0000;
+}

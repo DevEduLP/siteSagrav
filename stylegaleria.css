@@ -1,0 +1,114 @@
+/* Resetando alguns estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('images/InShot_20250305_101445569.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 135px;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+header nav ul li a:hover {
+    color: #ccc;
+}
+
+/* Estilo da galeria (seção) */
+#galeria {
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo suave para destacar a galeria */
+    border-radius: 10px;
+}
+
+#galeria h1 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Grid das fotos (alinhamento semelhante à discografia) */
+.foto-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.foto-item {
+    position: relative;
+    overflow: hidden; /* Esconde as partes das imagens que saem da área */
+}
+
+.foto-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem cobrir completamente o item sem distorcer */
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Efeito de hover */
+.foto-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 25px rgba(255, 255, 255, 0.5);
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+    .foto-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .foto-grid {
+        grid-template-columns: 1fr;
+    }
+}
